@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     //ArrayList<Payment> values;
 
     //First We Declare Titles And Icons For Our Navigation Drawer List View
-    //This Icons And Titles Are holded in an Array as you can see
+    //This Icons And Titles Are held in an Array as you can see
 
     String TITLES[] = {"Profile", "Groups", "Search", "OMes"};
     int ICONS[] = {R.drawable.ic_profiles,R.drawable.ic_groups,R.drawable.ic_search,R.drawable.ic_moneyc};
@@ -115,8 +115,11 @@ public class MainActivity extends AppCompatActivity {
         Bundle userData = getIntent().getExtras();
         if(userData != null){
             String key = "name";
+            String key2= "debt";
             System.out.println(userData.getString(key));
-            values.add(userData.getString(key));
+            System.out.println(userData.getString(key2));
+            values.add(userData.getString(key) + " owes $" + userData.getString(key2));
+            //values.add(userData.getString(key2));
         }
 
 

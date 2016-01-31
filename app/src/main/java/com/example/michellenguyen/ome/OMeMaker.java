@@ -31,10 +31,9 @@ public class OMeMaker extends MainActivity{
                 //Starting a new Intent
                 Intent nextScreen = new Intent(getApplicationContext(), MainActivity.class);
 
-
                 //Sending data to another Activity
                 nextScreen.putExtra("name", inputName.getText().toString());
-                //nextScreen.putExtra("debt", inputDebt.getText().toString());
+                nextScreen.putExtra("debt", inputDebt.getText().toString());
 
                 Log.e("n", inputName.getText()+"."+ inputDebt.getText());
 
