@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-Button oMe = (Button) findViewById(R.id.button2);
+        Button oMe = (Button) findViewById(R.id.button2);
         Button oYou = (Button) findViewById(R.id.button3);
         listView = (ListView)findViewById(R.id.list);
 
@@ -147,6 +147,8 @@ Button oMe = (Button) findViewById(R.id.button2);
                     + itemValue, Toast.LENGTH_LONG).show();
             }
         });
+
+
 
         oMe.setOnClickListener(new View.OnClickListener() {
 
@@ -189,6 +191,16 @@ Button oMe = (Button) findViewById(R.id.button2);
         EditText editText = (EditText) findViewById(R.id.edit_message);
     }
 */
+
+    //FIX LATER
+    // temp fix to back button-quitting crashing app on second run, doesn't go back to previous activities
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
