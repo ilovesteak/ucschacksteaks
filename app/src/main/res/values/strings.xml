@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ome</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="fortune_description">Suggest the question, which you can answer “yes” or “no”, then click on the magic ball.</string>
+
+    <string name="button_send">Send</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_ome_list">OMeList</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_groups">Groups</string>
+</resources>
